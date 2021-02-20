@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+//<img src={logo} className="App-logo" alt="logo" />
+//import Container from '@material-ui/core/Container'
+import { ThemeProvider, AppBar, Toolbar } from '@material-ui/core/'
+//import Typography from '@material-ui/core/Typography'
+import React from 'react'
+import theme from './theme'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Sitelink = () => {
+
 }
 
-export default App;
+const App = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <AppBar position="static">
+        <Toolbar><img src={logo} alt="logo" width="100" height="100" /></Toolbar>
+      </AppBar>
+    </ThemeProvider>
+  )
+}
+
+{/* <Container color="primary">
+<div>
+  <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+  welcome
+</div>
+</Container> */}
+
+export default App
