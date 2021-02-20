@@ -2,3 +2,34 @@
     margin-left: auto; 
     margin-right: 0;
   }
+
+.Background {
+  height: 1000px;
+  margin: auto;
+  width: 98%;
+  color: White;
+  font-family: "Verdana";
+  background-color: #17096c;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-self: center;
+  align-self: center;
+  grid-gap: 5rem;
+  background-color: #17096c;
+}
+
+.title {
+  font-size: 200px;
+  font-weight: 900;
+
+}
+
+.links {
+  font-size: 20px;
+  font-weight: 100;
+  align-self: end;
+}
