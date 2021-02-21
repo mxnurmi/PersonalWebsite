@@ -12,10 +12,12 @@ import "./App.css"
 //<img src={logo} width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
 
 const Homepage = () => {
+
   const titleText = "Miska's Website"
   const subTitleText = "Welcome! This is a site for showing off my portfolio and hosting random projects"
   const introduction = "I'm a cognitive science graduate with UX- and data focused skillset."
   const email = "miskanurmi1@gmail.com"
+
   return(
     <div>
       <NavigationBar text={email}/>

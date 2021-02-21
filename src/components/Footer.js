@@ -12,12 +12,12 @@ function Footer() {
           <Col className="p-0" md={3} sm={12}>
           </Col>
           <Col className="p-0 d-flex justify-content-end" md={3}>
-                        Made by Miska Nurmi
+                        2021
           </Col>
         </Row>
       </Container>
     </footer>
-  );
+  )
 
 }
 

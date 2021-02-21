@@ -1,0 +1,36 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "image": "uusilastensairaala_main.jpg",
+            "title": "Project 1: New Children’s Hospital, Usability evaluation",
+            "task": "As a part of “Usability Evaluation” -course, I, as a part of a three person group, completed a full usability evaluation of the sign-up and navigation process at the New Children’s Hospital. In order to get to a appointment, people using the hospital’s services had to sign-up and then find the correct location based on the instructions given during the sign-up process. The hospital knew that there were problems in this process and asked us to do an usability evaluation of it. ",
+            "methods": "As expert evaluation methods we completed heuristic evaluation and cognitive walkthrough of the sign-up process and the navigation. As empiristic evaluation methods we used the think aloud and usability test methods for the sign-up process and semi-structured interviews for both the sign-up and the navigation processes. We interviewed and observed both the users and the staff of the hospital to get the complete picture. Based on the collected data we evaluated and listed the biggest issues.",
+            "results": "The most glaring issue was that after a successful sign-up, the user was given instructions to navigate to the next location while the sign-up machine also printed out the bracelet needed to complete the sign-up there. Especially if there were children who got excited for the bracelet, too much was going on for the users to internalize the instructions in the quick 10 seconds that the instructions were visible. Recommendation would be to extend the instruction time or to make the info screen clearer. Furthermore, the signs and instructions in the hospital were not following any clear set of rules and info stations and locations had varying naming standards. The arrows used to guide the users also varied in their meaning.Our recommendation was to create clearer standard and to update the navigation signs."
+        },
+        {
+            "id": 2,
+            "image": "speksi.png",
+            "title": "Project 2: Penkereen speksi, Website redesign",
+            "task": "I personally designed a new look for Penkereen speksi organization (https://penkereenspeksi.fi/) . The goal was to design a new layout that the organization could then give feedback for and which I would use as a basis for coding the actual website using React and Node.js. The main focuses for the update were to create a clear “call for action” for ticket sales and recruitment and to make the content more visible upon arrival to the site.",
+            "methods": "I completed the new design by making a mockup with Sketch.",
+            "results": "New, updated design below. The “call for action” is now  instantly visible at the top right (“osta liput”) and the simplicity of the old site, which I wanted to maintain, wasn’t sacrificed."
+        },
+        {
+            "id": 3,
+            "image": "interactive.png",
+            "title": "Project 3: Group project for Interaction Design -course",
+            "task": "I, as apart of a three person group, helped with creation, design and UX testing of a service that was supposed to use notifications in an interesting way. In the end we were supposed to test the prototype against an alternative version to come up with a final prototype design.",
+            "methods": "We came up with a design for smart shopping app, that was supposed to notify the user when a product they were interested on was available nearby. We created two alternative prototypes with Adobe XD to do an A/B -test on, with one using more dynamic elements and the other simple checkboxes for prioritising the item list that would work as a source for giving the notifications. We did usability evaluation for both of the prototypes and used semi-structured interviews to identify possible issues and strengths of each prototype.",
+            "results": "The interesting part of this project was that the results actually could not separate the two prototypes and preference was almost dead even. This highlights how some users can find the more simplistic approach better, even if it isn’t as stylish. We also theorized that the dynamic elements were more difficult to convey with the prototyping tool and therefore some people found the dynamic version more difficult to use."
+        },
+        {
+            "id": 4,
+            "image": "redi_usergroups.png",
+            "title": "Project 4: REDI -shopping mall, Service Design of bus service",
+            "task": "I, as apart of a three person group, helped with creation, design and UX testing of a service that was supposed to use notifications in an interesting way. In the end we were supposed to test the prototype against an alternative version to come up with a final prototype design.",
+            "methods": "We came up with a design for smart shopping app, that was supposed to notify the user when a product they were interested on was available nearby. We created two alternative prototypes with Adobe XD to do an A/B -test on, with one using more dynamic elements and the other simple checkboxes for prioritising the item list that would work as a source for giving the notifications. We did usability evaluation for both of the prototypes and used semi-structured interviews to identify possible issues and strengths of each prototype.",
+            "results": "The interesting part of this project was that the results actually could not separate the two prototypes and preference was almost dead even. This highlights how some users can find the more simplistic approach better, even if it isn’t as stylish. We also theorized that the dynamic elements were more difficult to convey with the prototyping tool and therefore some people found the dynamic version more difficult to use."
+        }
+    ]
+}
