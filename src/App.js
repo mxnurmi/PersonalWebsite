@@ -1,35 +1,53 @@
 /* eslint-disable no-unused-vars */
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
+import Portfolio from "./components/Portfolio"
+import Hero from "./components/Hero"
+import NavigationBar from "./components/NavigationBar"
+import Container from "react-bootstrap/Container"
+import React from "react"
+import Footer from "./components/Footer"
+import memepic from "./images/meme.jpg"
+import "./App.css"
 
-import { ThemeProvider, Container, Typography } from '@material-ui/core/'
-import { BrowserRouter, Route, Link } from 'react-router-dom'
-import CssBaseline from '@material-ui/core/CssBaseline'
-//import Portfolio from './components/Portfolio'
-import React from 'react'
-import theme from './theme'
-import './App.css'
-
-//rememeber to add <Portfolio />
+//<img src={logo} width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
 
 const Homepage = () => {
-
+  const titleText = "Miska's Website"
+  const subTitleText = "Welcome! This is a site for showing off my portfolio and hosting random projects"
+  const introduction = "I'm a cognitive science graduate with UX- and data focused skillset."
+  const email = "miskanurmi1@gmail.com"
   return(
-    <div className="Background">
-      <div className="grid">
-        <div className="title">Miska</div>
-        <div className="links">Links</div>
-        <div className="title">Nurmi</div>
-        <div className="links">Portfolio</div>
-
-      </div>
+    <div>
+      <NavigationBar text={email}/>
+      <Hero title={titleText} subTitle={subTitleText} text={introduction}/>
+      <Footer />
     </div>
   )
 }
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <Homepage />
-    </ThemeProvider>
+    <div>
+      <Router>
+        <Switch>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/projects">
+            <Container>
+              <NavigationBar text={"miskanurmi1@gmail.com"}/>
+              <h2>{"This is where I'd put my projects"}</h2>
+              <img src={memepic} />
+              <h2>{"If I had any"}</h2>
+            </Container>
+          </Route>
+          <Route path="/">
+            <Homepage />
+          </Route>
+        </Switch>
+
+      </Router>
+    </div>
   )
 }
 
