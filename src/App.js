@@ -9,7 +9,6 @@ import Button from "react-bootstrap/Button"
 import React, { useState, useEffect }  from "react"
 import Footer from "./components/Footer"
 import memepic from "./images/meme.jpg"
-import "./App.css"
 import { MyResponsiveScatterPlot, CreateData } from "./components/MyResponsiveScatterPlot"
 
 const Homepage = () => {
