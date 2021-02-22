@@ -3,7 +3,7 @@ import { ResponsiveScatterPlot } from "@nivo/scatterplot"
 
 
 function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+  return Math.floor(Math.random() * Math.floor(max))
 }
 
 const createXy = () => {
