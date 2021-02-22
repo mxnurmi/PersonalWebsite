@@ -5,32 +5,39 @@ import Portfolio from "./components/Portfolio"
 import Hero from "./components/Hero"
 import NavigationBar from "./components/NavigationBar"
 import Container from "react-bootstrap/Container"
-import React from "react"
+import Button from "react-bootstrap/Button"
+import React, { useState, useEffect }  from "react"
 import Footer from "./components/Footer"
 import memepic from "./images/meme.jpg"
 import "./App.css"
-import { MyResponsiveScatterPlot, data} from "./components/MyResponsiveScatterPlot"
-
-//<img src={logo} width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
-
+import { MyResponsiveScatterPlot, CreateData } from "./components/MyResponsiveScatterPlot"
 
 const Homepage = () => {
+  const [dataset, setData] = useState([])
 
   const titleText = "Miska's Website"
   const subTitleText = "Welcome! This is a site for showing off my portfolio and hosting random projects"
   const introduction = "The site is work in progress, let me know if you have any feedback"
   const email = "miskanurmi1@gmail.com"
 
+  useEffect(() => {
+    setData(CreateData())
+  }, [])
+
+  const refreshData = () => setData(CreateData())
+
   return(
     <div>
       <NavigationBar text={email}/>
       <Hero title={titleText} subTitle={subTitleText} text={introduction}/>
-      <div style={{ height: 400 }}> <MyResponsiveScatterPlot data={data}/> </div>
+      <div style={{ height: 400 }}> <MyResponsiveScatterPlot data={dataset}/> </div>
+      <Container fluid>
+        <Button variant="dark" onClick={refreshData}>Refresh</Button>
+      </Container>
       <Footer />
     </div>
   )
 }
-
 
 
 const App = () => {
